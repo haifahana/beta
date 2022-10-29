@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html>
+<!-- c'est le titre de la page web la partie invisible de la page web -->
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Beta</title>
+  <!-- faire appel a un fichier css a distance pour pouvoir inclure des icons-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- inclure du Css dans la page HTML -->
+<link rel="stylesheet" href="css/style.css">
+<script  src="js/index.js" defer></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+</head>
+<!-- le corp de la page web -->
+<body>
+  
+  <!-- en-tête de la page web -->
+  <header>
+    
+<!-- c'est une barre de navigation, elle peut inclure des liens pour se dériger vers d'autre page web-->
+    <nav>
+      
+      <!-- le contenant d'une liste a puces -->
+      <ul class="onglets">
+        <!-- c'est un item de cette liste a puces  -->
+        <li class="logo"><img src="image/Logo.png" alt="" class="logo"> </li>
+        <!-- permet de segmenter la nav entre le logo et la navigation   -->
+        <div class="right">
+          <!-- la balise i permet de inclure des icons -->
+          <li class="link"><a href="feraille.html"> <i class="fa-solid fa-gear"></i> Ferraille </a></li>
+          <li class="link"><a href="engrais-biologique.html"><i class="fa-solid fa-leaf"> </i> Les engrais biologiques </a></li>
+          <li class="link"><a href="#"> <i class="fa-solid fa-cart-shopping"></i> Achat </a></li>
+          <li class="link"><a href="entreprise.html"> <i class="fa-solid fa-building"></i> entrentreprise </a></li>
+        </div>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="main">
+    <div class="for-padding">
+      <h1>Beta </h1>
+      <h2>bonjour et bienvenue sur le site de Beta </h2>
+      <p>les principale activite des beta Batement est l'achat et la revente des matiere premiere des
+        usines de productions vers les magasins specialises et des entreprises de constructions. Par exemple, un des ses
+        produits phares est les engrais biologiques qu'elle
+        vendait a la grande distribution.</p>
+    </div>
+    <!-- une liste de card -->
+    <div class="cards">
+      <!--la premiere card -->
+      <div class="card">
+        <!--l'entete de la card -->
+      <div class="card-header">
+      <img src="image/ferraille.png" alt="" class="card-img">
+      </div>
+      <!--les information de la card -->
+        <div class="card-fer" >
+         <h3 class="title">Ferraille </h3> 
+          <p id="priceFer" class="price">0,39$  </p>
+          <p><span>Prix</span>: 1 kilo de ferraille</p>
+        </div>
+      </div>
+      <div class="card">
+        <!--l'entete de la card -->
+        <div class="card-header">
+        <img src="image/engrai biologique.png" alt="" class="card-img">
+        </div>
+         <!--les information de la card -->
+          <div class="card-eng">
+           <h4 class="title">engrais biologiques </h4> 
+            <p id="priceEng" class="price">30$ </p>
+            <p><span>Prix</span>: 1 kilo des engrais biologiques</p>
+          </div>
+        </div>
+      </div>
+  </main>
+  <!--pied de page-->
+  <footer>
+<p>&copy; Contactez-nous </p>
+     <!-- les informations de l'adresse mail et du numéro de téléphone -->
+    <div class="Respensable">
+      <!-- crée un lien vers l'adrrese mail et le numéro de téléphone  -->
+      <p> <a href="mailto:pierre.ahanda@gmail.com"><i class="fa-solid fa-at"></i></a></p>
+      <p> <a href="tel:+33633643389"><i class="fa-solid fa-mobile"></i> </a></p>
+      </div>
+  </footer>
+</body>
+</html>

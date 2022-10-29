@@ -1,0 +1,212 @@
+/* ajouter une bibliothèque de police */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=PT+Sans:ital@0;1&display=swap');
+body{
+  font-family: 'PT Sans', sans-serif;
+}
+
+header{
+  /* la nave bar reste collée en haut et elle ne bouge pas */
+  position: sticky;
+  top:0;
+  /* crée une ombres à la balise header*/
+  box-shadow: 0 4px 2px -2px gray;
+  /* donne de l'importance a sont positionement */
+  z-index: 999 !important;
+  /* l'écriture sera en gris*/
+  color:#D5D5D5;
+  /* le fond de header de page sera en blanc*/
+  background-color: white;
+
+  height: 100px;
+}
+/*reduire la pare de navigation */
+nav {
+  padding: 10px;
+}
+/* les éléments enfant deviennent des élements fexible */
+ul {
+    display: flex;
+}
+
+li {
+  /* sa supprime les puce de chaque item*/
+  list-style-type: none;
+  /* chaque li a un écar de 25 px a droite */
+  padding-right: 25px;  
+  /*changer la taille du texte a 25 px */
+  font-size: 25px;
+}
+
+.right {
+  /* le menue ne pouge pas */
+  position: absolute;
+  /* la position est a 15 px a droite*/
+  right: 15px;
+  /* les éléments enfant deviennent des élements fexible  */
+  display: flex;
+  /*Align la div right au center verticalement*/
+  align-self: center;
+}
+
+.right li {
+  /*changer la taille du texte a 20px */
+  font-size: 20px;
+}
+
+  .main{
+    /* les marge de chaque cote sont a 20 px sauf celle du haut qu est a 30 px*/
+    margin: 20px;
+    margin-top: 30px;
+    /* les éléments enfant deviennent des élements fexible  */
+    display:flex;
+    /* reduire la pare de main a 10 px*/
+    padding: 10px;
+    /* les enfant seront alligner en colone  */
+    flex-direction:column;
+    /*  */
+    justify-content:center;
+    /*  */
+    align-items:center;
+  }
+
+  .cards{
+     /* les éléments enfant deviennent des élements fexible  */
+    display:flex;
+    flex-wrap:wrap;
+  }
+  .cards .card{
+    /* les marge de droite sont a 80 px*/
+    margin-right: 80px;
+    /*le cursor changer en pointeur */
+    cursor:pointer;
+    /* reduire l'interieur de la card de 8px*/
+    padding: 8px;
+    /* la taille de la card est a 275 px */
+    width: 275px;
+    /* l'ombre de la card*/
+    box-shadow: 0 0 20px #ccc;
+    /* la forme arondie du coint de la card */
+    border-radius: 100px 5px 100px 5px;
+
+  }
+   /* reduire l'interieur de for de 10px*/
+  .for-padding {
+    padding: 10px;
+  }
+
+  .card-img {
+    /*padding: 0 !important;*/
+    width: 150px;
+    transition: transform .4s;
+  }
+
+  .logo {
+    width: 70px;
+  }
+
+  .card span {
+    /* entre les les deux span le texte est souliner */
+    text-decoration: underline;
+  }
+  .card-img:hover{
+    /* l'image augmenter a 50%*/
+    transform: scale(1.2);
+    
+   
+  }
+  
+  .cards .card .card-header{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+  }
+  .cards .card .card-fer p{
+    margin-top: -10px;
+  }
+  .cards .card .card-eng p{
+    margin-top: -10px;
+  }
+  footer {
+    margin-top: 100px;
+     /* le fond de footer de page sera en bleux*/
+    background-color: #170187;
+    padding: 30px;
+      /* l'écriture sera en gris*/
+    color:white;
+    /* les éléments enfant deviennent des élements fexible  */
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+  }
+  footer .Respensable{
+    display: flex;
+  }
+  footer .Respensable p{
+    margin-right: 15px;
+    border: 1px solid burlywood;
+    border-radius: 100%;
+    padding: 5px;
+    text-align:center;
+    width: 20px;
+    cursor:pointer;
+  }
+  .fa-at {
+    color: white;
+  }
+  .fa-mobile{
+    color:white;
+  }
+
+
+  .imp_exp{
+    width: 100%;
+    height: 450px;
+  }
+  .beta{
+    text-align: center;
+   }
+   .map_beta{
+    transition: .3s;
+   }
+   .map_beta:hover{
+    width: 700px;
+    height: 550px;
+    transition: .3s;
+    cursor: pointer;
+   }
+   .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+  body {
+    margin: 0;
+  }
+
+  @media only screen and (max-width: 800px) {
+    .menu {
+        flex-direction: column;
+        height: auto;
+      
+    }
+
+    .logo {
+      text-align: center;
+    }
+
+    ul {
+      display: block !important;
+
+    }
+
+    nav {
+      font-size: 15px;
+    }
+    
+    .link {
+      font-size: 15px !important;
+    }
+    
+    
+}
